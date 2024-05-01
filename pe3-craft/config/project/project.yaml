@@ -1,12 +1,35 @@
-dateModified: 1713879586
+dateModified: 1714587240
 email:
   fromEmail: thomas.peeters3@student.pxl.be
   fromName: RetroSpin-Records
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  bestanden:
+    hasUrls: true
+    name: Bestanden
+    settings:
+      path: '@webroot/files'
+    type: craft\fs\Local
+    url: /files
 meta:
   __names__:
+    3c9a23a8-8e01-47af-86cf-fc3bab68d234: BedrijfsInfo # BedrijfsInfo
+    3fd565b9-1770-4121-b7e2-688ae9546c48: Headertitle # Headertitle
     6bbad967-7648-4693-aa58-3ff8c708520b: RetroSpin-Records # RetroSpin-Records
+    41ffc207-9513-4d98-8449-ce070f4f9f77: iconline # iconline
+    52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
+    86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
+    853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
+    970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
+    ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
+    cac06e91-641f-4b80-aef7-00a6c3477b63: Navigation # Navigation
+    ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
+    d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
+    e8fc032b-2654-4df7-aece-a0f834278108: Product # Product
+    f37420bd-f257-4b9a-bd8e-9fb41372b296: intro # intro
+    fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
+    fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten
 system:
   edition: solo
   live: true
