@@ -6,15 +6,23 @@
 {% set ProductImage4 = entry.product.nth(3) %}
 {% set ProductImage5 = entry.product.nth(4) %}
 
+{% set icon = entry.iconline %}
+
+
 
 {% block content %}
+
     <section class="about">
     <div class="about-tekst">
     <h1 class="main-heading">{{ entry.Headertitle }}</h1>
     <h3 class="sub-heading">{{ entry.headerslogan }}</h3>
 
-<div class="stars">
-
+<div class="icons">
+    {% if icon %}
+        <i class="fa-solid fa-{{ icon }}"></i>
+        <i class="fa-solid fa-{{ icon }}"></i>
+        <i class="fa-solid fa-{{ icon }}"></i>
+    {% endif %}
 </div>
 
 <p class="description">{{ entry.intro }}</p>
@@ -22,6 +30,13 @@
 <p class="description">{{ entry.intro3 }}</p>
 <p class="description">{{ entry.intro4 }}</p>
 <p class="description">{{ entry.intro5 }}</p>
+        <div class="stars">
+            {% if icon %}
+                <i class="fa-solid fa-{{ icon }}"></i>
+                <i class="fa-solid fa-{{ icon }}"></i>
+                <i class="fa-solid fa-{{ icon }}"></i>
+            {% endif %}
+        </div>
     </div>
     </section>
 
@@ -29,6 +44,11 @@
         <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>
         <div  class="cards-wrapper">
             <div class="card">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">titel</h1>
+                    <p class="card-overlay-paragraph">Price: € </p>
+                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
+                </div>
                 {% if ProductImage1 %}
                     <img class="card-image" src="{{ ProductImage1.url }}" alt="">
                 {% endif %}
