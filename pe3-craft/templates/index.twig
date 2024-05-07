@@ -13,31 +13,28 @@
 {% block content %}
 
     <section class="about">
-    <div class="about-tekst">
-    <h1 class="main-heading">{{ entry.Headertitle }}</h1>
-    <h3 class="sub-heading">{{ entry.headerslogan }}</h3>
+        <div class="about-tekst">
+            <h1 class="main-heading">{{ entry.Headertitle }}</h1>
+            <h3 class="sub-heading">{{ entry.headerslogan }}</h3>
 
-<div class="icons">
-    {% if icon %}
-        <i class="fa-solid fa-{{ icon }}"></i>
-        <i class="fa-solid fa-{{ icon }}"></i>
-        <i class="fa-solid fa-{{ icon }}"></i>
-    {% endif %}
-</div>
+            <div class="stars">
+                <i class="fa-solid fa-{{ icon }}"></i>
+                <i class="fa-solid fa-{{ icon }}"></i>
+                <i class="fa-solid fa-{{ icon }}"></i>
+            </div>
 
-<p class="description">{{ entry.intro }}</p>
-<p class="description">{{ entry.intro2 }}</p>
-<p class="description">{{ entry.intro3 }}</p>
-<p class="description">{{ entry.intro4 }}</p>
-<p class="description">{{ entry.intro5 }}</p>
-        <div class="stars">
-            {% if icon %}
+            <p class="description">{{ entry.intro }}</p>
+            <p class="description">{{ entry.intro2 }}</p>
+            <p class="description">{{ entry.intro3 }}</p>
+            <p class="description">{{ entry.intro4 }}</p>
+            <p class="description">{{ entry.intro5 }}</p>
+
+            <div class="stars">
                 <i class="fa-solid fa-{{ icon }}"></i>
                 <i class="fa-solid fa-{{ icon }}"></i>
                 <i class="fa-solid fa-{{ icon }}"></i>
-            {% endif %}
+            </div>
         </div>
-    </div>
     </section>
 
     <section class="gallery">
@@ -54,26 +51,47 @@
                 {% endif %}
             </div>
             <div class="card">
-                {% if ProductImage2 %}
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">titel</h1>
+                    <p class="card-overlay-paragraph">Price: € </p>
+                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
+                </div>
+                {% if ProductImage1 %}
                     <img class="card-image" src="{{ ProductImage2.url }}" alt="">
                 {% endif %}
-            </div><div class="card">
-                {% if ProductImage3 %}
+            </div>
+            <div class="card">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">titel</h1>
+                    <p class="card-overlay-paragraph">Price: € </p>
+                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
+                </div>
+                {% if ProductImage1 %}
                     <img class="card-image" src="{{ ProductImage3.url }}" alt="">
                 {% endif %}
-            </div><div class="card">
-                {% if ProductImage4 %}
+            </div>
+            <div class="card">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">titel</h1>
+                    <p class="card-overlay-paragraph">Price: € </p>
+                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
+                </div>
+                {% if ProductImage1 %}
                     <img class="card-image" src="{{ ProductImage4.url }}" alt="">
                 {% endif %}
-            </div><div class="card">
-                {% if ProductImage5 %}
+            </div>
+            <div class="card">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">titel</h1>
+                    <p class="card-overlay-paragraph">Price: € </p>
+                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
+                </div>
+                {% if ProductImage1 %}
                     <img class="card-image" src="{{ ProductImage5.url }}" alt="">
                 {% endif %}
             </div>
         </div>
     </section>
-
-
     <section id="contact">
         <div class="container">
             <section class="company-info">
@@ -104,7 +122,7 @@
         </div>
     </section>
 
-
-
-<p class="footer">{{ entry.footer }}</p>
+    <footer class="footer">
+        <p>{{entry.footer}}</p>
+    </footer>
 {% endblock %}
