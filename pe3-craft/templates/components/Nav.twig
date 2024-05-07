@@ -1,0 +1,14 @@
+{% set mainNav = craft.navigate.raw('mainNav') %}
+<header>
+    <nav class="navbar">
+        <img src="{{ entry.navimage.one().url}}" alt="">
+        <ul>
+            {% for node in mainNav %}
+                <li>
+                    <a href="{{ node.url }}">{{ node.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+</header>

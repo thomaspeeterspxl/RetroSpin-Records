@@ -1,4 +1,32 @@
-dateModified: 1714587240
+dateModified: 1715099806
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: true
+      key: 'section:cac06e91-641f-4b80-aef7-00a6c3477b63'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
 email:
   fromEmail: thomas.peeters3@student.pxl.be
   fromName: RetroSpin-Records
@@ -13,23 +41,38 @@ fs:
     url: /files
 meta:
   __names__:
+    0cadc980-a6c8-47f1-92b8-5964fb4a57fe: NavImage # NavImage
     3c9a23a8-8e01-47af-86cf-fc3bab68d234: BedrijfsInfo # BedrijfsInfo
     3fd565b9-1770-4121-b7e2-688ae9546c48: Headertitle # Headertitle
+    6a9618e3-9163-4cc8-b8f2-c0580ffbdff1: Contact # Contact
     6bbad967-7648-4693-aa58-3ff8c708520b: RetroSpin-Records # RetroSpin-Records
     41ffc207-9513-4d98-8449-ce070f4f9f77: iconline # iconline
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
+    379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
     970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
+    05237e69-d31f-487e-acc3-b488f23884cc: Contact # Contact
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
+    36842d5e-8e26-448d-a143-83a8e327e965: 'Log in' # Log in
+    a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
     ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
-    cac06e91-641f-4b80-aef7-00a6c3477b63: Navigation # Navigation
+    ad28a1db-6fa9-41e1-bb1e-2c8b9a7587f4: Nav # Nav
+    c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
     e8fc032b-2654-4df7-aece-a0f834278108: Product # Product
+    ed333ccf-fb85-4fd6-a36a-df827218fef4: Winkelmand # Winkelmand
+    f8baba0a-a85e-48c8-b22e-b89707111f22: 'Public Schema' # Public Schema
     f37420bd-f257-4b9a-bd8e-9fb41372b296: intro # intro
     fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
     fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten
+plugins:
+  navigate:
+    edition: standard
+    enabled: true
+    licenseKey: ADD0BZLTOPD3SAFKCJB6JU0W
+    schemaVersion: 2.4.0
 system:
   edition: solo
   live: true

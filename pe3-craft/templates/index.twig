@@ -6,11 +6,24 @@
 {% set ProductImage4 = entry.product.nth(3) %}
 {% set ProductImage5 = entry.product.nth(4) %}
 
+{% set NavImage = entry.navimage.one() %}
+
 {% set icon = entry.iconline %}
 
 
 
 {% block content %}
+    {#    <nav class="navbar"> #}
+    {#        <img src="" alt="nav image"> #}
+    {#        <ul> #}
+    {#            <li><router-link to="/"><i class="fa-solid fa-house"></i></router-link></li> #}
+    {#            <li><router-link to="/products">Producten</router-link></li> #}
+    {#            <li><router-link to="/:Contact">Contact</router-link></li> #}
+    {#            <li><router-link to="/LogIn"><i class="fa-solid fa-user"></i></router-link></li> #}
+    {#            <li><router-link to="/winkelmand"> <i class="fa-solid fa-cart-shopping"></i></router-link></li> #}
+    {#        </ul> #}
+    {#    </nav> #}
+
 
     <section class="about">
         <div class="about-tekst">
@@ -39,7 +52,7 @@
 
     <section class="gallery">
         <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>
-        <div  class="cards-wrapper">
+        <div class="cards-wrapper">
             <div class="card">
                 <div class="card-overlay">
                     <h1 class="card-overlay-heading">titel</h1>
@@ -123,6 +136,10 @@
     </section>
 
     <footer class="footer">
-        <p>{{entry.footer}}</p>
+        <p>{{ entry.footer }}</p>
+
+{#            {% if NavImage %}#}
+{#            <img src="{{ NavImage.url }}" alt="">#}
+{#        {% endif %}#}
     </footer>
 {% endblock %}
