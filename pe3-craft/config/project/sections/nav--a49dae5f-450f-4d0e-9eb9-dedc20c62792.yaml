@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - ad28a1db-6fa9-41e1-bb1e-2c8b9a7587f4 # Nav
+handle: nav
+maxAuthors: 1
+name: Nav
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9155b977-ae75-4e7e-aa57-cfcd0453780e: # RetroSpin-Records
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - c4723b7b-587c-4b85-8396-05aa8c5e4aa7 # Log in
+handle: logIn
+maxAuthors: 1
+name: 'Log in'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9155b977-ae75-4e7e-aa57-cfcd0453780e: # RetroSpin-Records
+    enabledByDefault: true
+    hasUrls: true
+    template: log-in/_entry
+    uriFormat: log-in
+type: single

@@ -1,0 +1,50 @@
+color: red
+fieldLayouts:
+  5fff7fae-5bb0-4371-bd10-0ef5dbec096b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 12af4fc4-4186-4dd9-97c6-9ddf6a714141
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f06ba7f7-26fe-4899-8f6b-394816a5bdbd
+        userCondition: null
+handle: logIn
+hasTitleField: true
+icon: user
+name: 'Log in'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

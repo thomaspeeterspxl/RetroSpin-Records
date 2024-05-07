@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - fc181f59-385b-47a7-b173-1f84efccd5e3 # Producten
+handle: producten
+maxAuthors: 2
+name: Producten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9155b977-ae75-4e7e-aa57-cfcd0453780e: # RetroSpin-Records
+    enabledByDefault: true
+    hasUrls: true
+    template: Producten.twig
+    uriFormat: producten
+type: single

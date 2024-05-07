@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 05237e69-d31f-487e-acc3-b488f23884cc # Contact
+handle: contact
+maxAuthors: 1
+name: Contact
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9155b977-ae75-4e7e-aa57-cfcd0453780e: # RetroSpin-Records
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/_entry
+    uriFormat: contact
+type: single

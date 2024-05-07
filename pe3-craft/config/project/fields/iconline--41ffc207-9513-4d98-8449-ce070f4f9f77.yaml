@@ -1,0 +1,8 @@
+columnSuffix: null
+handle: iconline
+instructions: null
+name: iconline
+searchable: true
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Icon

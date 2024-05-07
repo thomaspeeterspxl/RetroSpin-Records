@@ -1,0 +1,50 @@
+color: red
+fieldLayouts:
+  82d1ec56-bbd0-4dda-9a56-f758267541cf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f9c431ac-c762-4612-a533-56d647d585a4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7677f3f8-5272-4c4d-822c-6241c8ad5521
+        userCondition: null
+handle: winkelmand
+hasTitleField: true
+icon: cart-shopping
+name: Winkelmand
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
