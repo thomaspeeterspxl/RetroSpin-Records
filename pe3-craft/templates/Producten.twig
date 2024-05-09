@@ -1,0 +1,79 @@
+{% extends './_layout.twig' %}
+{% set ProductImage1 = entry.productimage.nth(0) %}
+{% set ProductImage2 = entry.productimage.nth(1) %}
+{% set ProductImage3 = entry.productimage.nth(2) %}
+{% set ProductImage4 = entry.productimage.nth(3) %}
+{% set ProductImage5 = entry.productimage.nth(4) %}
+{% set ProductImage6 = entry.productimage.nth(5) %}
+
+{% block content %}
+    <section class="tekst-overzichtspagina">
+        <h1>catalogus</h1>
+        <p>Hier vind u een overzicht van alle producten die beschikbaar zijn op deze webshop.</p>
+        <p>Zijn er producten die u misschien mist, kom dan zeker eens langs in de winkel.</p>
+    </section>
+    <section id="products">
+
+        <main class="main">
+{#            <div v-for="(product, index) in paginatedProducts" :key="index" class="main-products">#}
+{#                <ProductCardComponent :product="product"/>#}
+{#            </div>#}
+<div class="main-products">
+    <h2>{{ entry.producttitle }}</h2>
+    {% if ProductImage1 %}
+        <img class="card-image" src="{{ ProductImage1.url }}" alt="">
+    {% endif %}
+    <p class="main-products-tekst">{{ entry.productdescription }}</p>
+    <p class="main-products-prijs">Price: € {{ entry.productprijs}} </p>
+    <button class="button-detail" @click="viewProductDetails">lees meer</button>
+</div>
+            <div class="main-products">
+                <h2>{{ entry.producttitle2 }}</h2>
+                {% if ProductImage2 %}
+                    <img class="card-image" src="{{ ProductImage2.url }}" alt="">
+                {% endif %}
+                <p class="main-products-tekst">{{ entry.productdescription2 }}</p>
+                <p class="main-products-prijs">Price: € {{ entry.productprijs2}} </p>
+                <button class="button-detail" @click="viewProductDetails">lees meer</button>
+            </div>
+            <div class="main-products">
+                <h2>{{ entry.producttitle3 }}</h2>
+                {% if ProductImage2 %}
+                    <img class="card-image" src="{{ ProductImage3.url }}" alt="">
+                {% endif %}
+                <p class="main-products-tekst">{{ entry.productdescription3 }}</p>
+                <p class="main-products-prijs">Price: € {{ entry.productprijs3}} </p>
+                <button class="button-detail" @click="viewProductDetails">lees meer</button>
+            </div>
+            <div class="main-products">
+                <h2>{{ entry.producttitle4 }}</h2>
+                {% if ProductImage2 %}
+                    <img class="card-image" src="{{ ProductImage4.url }}" alt="">
+                {% endif %}
+                <p class="main-products-tekst">{{ entry.productdescription4 }}</p>
+                <p class="main-products-prijs">Price: € {{ entry.productprijs4}} </p>
+                <button class="button-detail" @click="viewProductDetails">lees meer</button>
+            </div>
+            <div class="main-products">
+                <h2>{{ entry.producttitle5 }}</h2>
+                {% if ProductImage2 %}
+                    <img class="card-image" src="{{ ProductImage5.url }}" alt="">
+                {% endif %}
+                <p class="main-products-tekst">{{ entry.productdescription5 }}</p>
+                <p class="main-products-prijs">Price: € {{ entry.productprijs5}} </p>
+                <button class="button-detail" @click="viewProductDetails">lees meer</button>
+            </div>
+            <div class="main-products">
+                <h2>{{ entry.producttitle6 }}</h2>
+                {% if ProductImage2 %}
+                    <img class="card-image" src="{{ ProductImage6.url }}" alt="">
+                {% endif %}
+                <p class="main-products-tekst">{{ entry.productdescription6 }}</p>
+                <p class="main-products-prijs">Price: € {{ entry.productprijs6}} </p>
+                <button class="button-detail" @click="viewProductDetails">lees meer</button>
+            </div>
+        </main>
+    </section>
+
+
+{% endblock %}
