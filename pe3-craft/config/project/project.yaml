@@ -1,4 +1,4 @@
-dateModified: 1715266478
+dateModified: 1715367304
 elementSources:
   craft\elements\Entry:
     -
@@ -48,8 +48,11 @@ meta:
     5c7009ad-02cd-4079-9976-93a27f92259f: ProductPrijs # ProductPrijs
     6a9618e3-9163-4cc8-b8f2-c0580ffbdff1: Contact # Contact
     6bbad967-7648-4693-aa58-3ff8c708520b: RetroSpin-Records # RetroSpin-Records
+    6d50525a-4b60-4733-b8ff-1df46ef96721: DetailPagina # DetailPagina
     41ffc207-9513-4d98-8449-ce070f4f9f77: iconline # iconline
+    51c25c0c-0449-4720-83c6-2d6192dba44c: ProductVoorraad # ProductVoorraad
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
+    60bf57a9-d1de-4fa6-8e6c-572ea479e692: Detailbutton # Detailbutton
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
     379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
@@ -61,6 +64,7 @@ meta:
     a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
     ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
     ad28a1db-6fa9-41e1-bb1e-2c8b9a7587f4: Nav # Nav
+    b601c2f0-f588-4949-9f96-b0365eba500d: DetailPagina # DetailPagina
     c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
@@ -72,6 +76,15 @@ meta:
     fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
     fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten
 plugins:
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: YXOO6JCNMQEV85QTEF6TJOT0
+    schemaVersion: 1.0.0
   navigate:
     edition: standard
     enabled: true

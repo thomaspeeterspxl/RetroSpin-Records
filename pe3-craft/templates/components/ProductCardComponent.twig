@@ -1,5 +1,13 @@
- <h2>title</h2>
-{#      <img class="main-products-foto" :src= 'product.afbeelding' alt="eminem lp">#}
-      <p class="main-products-tekst">tekst</p>
-      <p class="main-products-prijs">Price: € </p>
-        <button class="button-detail" @click="viewProductDetails">lees meer</button>
+
+ {% for block in productimage.productimage %}
+ <div class="main-products">
+     <h2>{{ block.producttitle}}</h2>
+     <img src="{{ block.url }}" alt="" class="main-products-foto">
+     <p class="main-products-tekst">{{ block.productdescription }}</p>
+     <p class="main-products-prijs">Price: € {{ block.productprijs }}</p>
+     <a href="http://www.retrospin-records.be/detailpagina" target="_self">
+         <button type="button" class="button-detail">Read More</button>
+     </a>
+ </div>
+ {% endfor %}
+

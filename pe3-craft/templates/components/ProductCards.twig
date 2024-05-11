@@ -1,5 +1,16 @@
-<div class="card-overlay">
-    <h1 class="card-overlay-heading">titel</h1>
-    <p class="card-overlay-paragraph">Price: € </p>
-    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
-</div>
+{#<div class="card-overlay">#}
+{#    <h1 class="card-overlay-heading">titel</h1>#}
+{#    <p class="card-overlay-paragraph">Price: € </p>#}
+{#    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>#}
+{#</div>#}
+
+{% for block in product.product %}
+    <div class="card">
+        <div class="card-overlay">
+            <h1 class="card-overlay-heading">{{ block.producttitle }}</h1>
+            <p class="card-overlay-paragraph">Price: €{{ block.productprijs}} </p>
+            <p class="card-overlay-paragraph">Voorraad: {{ block.productvoorraad }} stuks</p>
+        </div>
+        <img src="{{ block.url }}" alt="" class="card-image">
+    </div>
+{% endfor %}

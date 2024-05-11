@@ -6,7 +6,7 @@
 {% set ProductImage4 = entry.product.nth(3) %}
 {% set ProductImage5 = entry.product.nth(4) %}
 
-{% set NavImage = entry.navimage.one() %}
+{#{% set NavImage = entry.navimage.one() %}#}
 
 {% set icon = entry.iconline %}
 
@@ -50,61 +50,78 @@
         </div>
     </section>
 
-    <section class="gallery">
-        <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>
-        <div class="cards-wrapper">
-            <div class="card">
-                <div class="card-overlay">
-                    <h1 class="card-overlay-heading">titel</h1>
-                    <p class="card-overlay-paragraph">Price: € </p>
-                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
-                </div>
-                {% if ProductImage1 %}
-                    <img class="card-image" src="{{ ProductImage1.url }}" alt="">
-                {% endif %}
+{#    <section class="gallery">#}
+{#        <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>#}
+{#        <div class="cards-wrapper">#}
+{#            <div class="card">#}
+{#                <div class="card-overlay">#}
+{#                    <h1 class="card-overlay-heading">titel</h1>#}
+{#                    <p class="card-overlay-paragraph">Price: € </p>#}
+{#                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>#}
+{#                </div>#}
+{#                {% if ProductImage1 %}#}
+{#                    <img class="card-image" src="{{ ProductImage1.url }}" alt="">#}
+{#                {% endif %}#}
+{#            </div>#}
+{#            <div class="card">#}
+{#                <div class="card-overlay">#}
+{#                    <h1 class="card-overlay-heading">titel</h1>#}
+{#                    <p class="card-overlay-paragraph">Price: € </p>#}
+{#                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>#}
+{#                </div>#}
+{#                {% if ProductImage1 %}#}
+{#                    <img class="card-image" src="{{ ProductImage2.url }}" alt="">#}
+{#                {% endif %}#}
+{#            </div>#}
+{#            <div class="card">#}
+{#                <div class="card-overlay">#}
+{#                    <h1 class="card-overlay-heading">titel</h1>#}
+{#                    <p class="card-overlay-paragraph">Price: € </p>#}
+{#                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>#}
+{#                </div>#}
+{#                {% if ProductImage1 %}#}
+{#                    <img class="card-image" src="{{ ProductImage3.url }}" alt="">#}
+{#                {% endif %}#}
+{#            </div>#}
+{#            <div class="card">#}
+{#                <div class="card-overlay">#}
+{#                    <h1 class="card-overlay-heading">titel</h1>#}
+{#                    <p class="card-overlay-paragraph">Price: € </p>#}
+{#                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>#}
+{#                </div>#}
+{#                {% if ProductImage1 %}#}
+{#                    <img class="card-image" src="{{ ProductImage4.url }}" alt="">#}
+{#                {% endif %}#}
+{#            </div>#}
+{#            <div class="card">#}
+{#                <div class="card-overlay">#}
+{#                    <h1 class="card-overlay-heading">titel</h1>#}
+{#                    <p class="card-overlay-paragraph">Price: € </p>#}
+{#                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>#}
+{#                </div>#}
+{#                {% if ProductImage1 %}#}
+{#                    <img class="card-image" src="{{ ProductImage5.url }}" alt="">#}
+{#                {% endif %}#}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+
+    {% set Products = craft.entries.section('homepage').all() %}
+    {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price').all() %}#}
+    {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price DESC').limit(3).all() %}#}
+
+    {% if Products|length > 0 %}
+        <section class="gallery">
+            <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>
+            <div class="cards-wrapper">
+                {% for product in Products %}
+                    {% include 'components/ProductCards.twig' %}
+                {% endfor %}
             </div>
-            <div class="card">
-                <div class="card-overlay">
-                    <h1 class="card-overlay-heading">titel</h1>
-                    <p class="card-overlay-paragraph">Price: € </p>
-                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
-                </div>
-                {% if ProductImage1 %}
-                    <img class="card-image" src="{{ ProductImage2.url }}" alt="">
-                {% endif %}
-            </div>
-            <div class="card">
-                <div class="card-overlay">
-                    <h1 class="card-overlay-heading">titel</h1>
-                    <p class="card-overlay-paragraph">Price: € </p>
-                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
-                </div>
-                {% if ProductImage1 %}
-                    <img class="card-image" src="{{ ProductImage3.url }}" alt="">
-                {% endif %}
-            </div>
-            <div class="card">
-                <div class="card-overlay">
-                    <h1 class="card-overlay-heading">titel</h1>
-                    <p class="card-overlay-paragraph">Price: € </p>
-                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
-                </div>
-                {% if ProductImage1 %}
-                    <img class="card-image" src="{{ ProductImage4.url }}" alt="">
-                {% endif %}
-            </div>
-            <div class="card">
-                <div class="card-overlay">
-                    <h1 class="card-overlay-heading">titel</h1>
-                    <p class="card-overlay-paragraph">Price: € </p>
-                    <p class="card-overlay-paragraph">Voorraad: 0 stuks</p>
-                </div>
-                {% if ProductImage1 %}
-                    <img class="card-image" src="{{ ProductImage5.url }}" alt="">
-                {% endif %}
-            </div>
-        </div>
-    </section>
+        </section>
+
+
+    {% endif %}
     <section id="contact">
         <div class="container">
             <section class="company-info">

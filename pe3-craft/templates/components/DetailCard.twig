@@ -1,0 +1,29 @@
+{% for block in productimage.productimage %}
+
+        <section class="detail-card">
+            <div class="photo">
+                <img src="{{ block.url }}" alt="" class="photo-detail">
+            </div>
+            <div class="detail-description">
+                <h2 class="detail-description-title">{{ block.producttitle }}</h2>
+                <h4 class="detail-description-name">artiest</h4>
+                <h1 class="detail-description-price">€{{ block.productprijs }}</h1>
+                <h1 class="detail-description-price"> % BTW</h1>
+                <p class="detail-description-price">{{ block.productvoorraad }} stuks in voorraad</p>
+                {#                <p class="detail-description-price" v-if="isInStock">In Stock</p>#}
+                {#                <p class="detail-description-price" v-else><span>Out of Stock</span></p>#}
+                <p class="detail-description-tekst">{{ block.productdescription }}</p>
+                <div class="quantity-container">
+                    <button class="quantity-button" @click="deleteOne()">-</button>
+                    <input class="counter_display" type="number" v-model="quantity" :max="isInStock ? product.voorraad : undefined" min="1">
+                    <button class="quantity-button" @click="addOne()">+</button>
+                </div>
+                <button @click="addToCart" class="button" id="button" :disabled="!isInStock || quantity > product.voorraad">Add To Cart</button>
+            </div>
+            {#            <div v-if="showPopup" class="popup">#}
+            {#                Je item is succesvol toegevoegd aan je winkelmandje!<br>#}
+            {#                <router-link to="/winkelmand">Ga naar je winkelmandje</router-link>#}
+            {#            </div>#}
+        </section>
+
+{% endfor %}
