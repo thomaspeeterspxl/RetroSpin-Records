@@ -1,6 +1,6 @@
 @use 'global' as *;
-body{
-  background:  linear-gradient(rgba(lightgray, .6), rgba(lightgray, .4)), url("../assets/Layer 3.png");
+.body{
+  background:  linear-gradient(rgba(lightgray, .6), rgba(lightgray, .4)), url("../../assets/Layer 3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ body{
   padding: 20px 0 ;
   .gallery-title{
     text-align: center;
-    font-family: $font-Sono;
+    font-family: $font-Sono, monospace;
   }
   .cards-wrapper {
     display: flex;
@@ -109,6 +109,7 @@ body{
   }
 }
 .footer{
+  //background-color: blue;
   background-color: $primary-color;
   height: 40px;
   padding: 5px;
@@ -118,3 +119,4 @@ body{
   font-family: $font-Sono;
   bottom: 0;
 }
+

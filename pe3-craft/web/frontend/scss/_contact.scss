@@ -8,8 +8,9 @@
 }
 
 .company-info {
-  flex: 1;
+  //flex: 1;
   padding: 25px 20px;
+  width: 50%;
 
   p{
     margin: 2rem 0 0 2rem;
@@ -20,11 +21,12 @@
 h2 {
   text-align: center;
 }
-  form {
+  .form {
     flex: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    //width: 80%;
   }
 
   label {

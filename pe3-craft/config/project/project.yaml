@@ -1,4 +1,4 @@
-dateModified: 1715367304
+dateModified: 1715599709
 elementSources:
   craft\elements\Entry:
     -
@@ -53,15 +53,19 @@ meta:
     51c25c0c-0449-4720-83c6-2d6192dba44c: ProductVoorraad # ProductVoorraad
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
     60bf57a9-d1de-4fa6-8e6c-572ea479e692: Detailbutton # Detailbutton
+    068c71da-c8ca-4d46-92d6-65566e35a01b: New # New
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
     379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
     970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
     05237e69-d31f-487e-acc3-b488f23884cc: Contact # Contact
+    7790ae66-c72f-4345-8a12-d79cb11d673f: test # test
     8435c819-c72b-466f-a620-16ba7f8654fc: ProductImage # ProductImage
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
     36842d5e-8e26-448d-a143-83a8e327e965: 'Log in' # Log in
+    0499757a-15c6-47cc-b779-37738fc23704: test # test
     a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
+    a77e5a9c-e6c3-4f98-a42d-b4725f35b271: 'Contact Form' # Contact Form
     ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
     ad28a1db-6fa9-41e1-bb1e-2c8b9a7587f4: Nav # Nav
     b601c2f0-f588-4949-9f96-b0365eba500d: DetailPagina # DetailPagina
@@ -76,14 +80,75 @@ meta:
     fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
     fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten
 plugins:
+  cookie-consent:
+    edition: standard
+    enabled: true
+    licenseKey: R6ZRXDTJ527ZQLT1HOGD9DMO
+    schemaVersion: 1.5.0
   dumper:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: XTGHWIWJBWU2Z1TATA7X2ZGX
+    schemaVersion: 3.4.4
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formie
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      setOnlyCurrentPagePayload: false
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: false
+      useQueueForNotifications: false
+      validateCustomTemplates: true
   hyper:
     edition: standard
     enabled: true
     licenseKey: YXOO6JCNMQEV85QTEF6TJOT0
+    schemaVersion: 1.0.0
+  language-manager:
+    edition: standard
+    enabled: false
+    licenseKey: IGQ67DM2XANMZ8YV4L0VWHC7
+    schemaVersion: 0.0.0
+    settings:
+      keepQueryParameters: true
+      labelType: name
+      showLanguageInThatLanguage: true
+  language-redirector:
+    edition: standard
+    enabled: true
+    licenseKey: SEDB170UJFN0F3R2ZNWWKGT6
     schemaVersion: 1.0.0
   navigate:
     edition: standard

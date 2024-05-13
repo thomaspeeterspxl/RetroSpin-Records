@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
 {#    <link rel="stylesheet" href="frontend/style.css">#}
     <link rel="stylesheet" href="css/main.css">
+
+    {% hook 'languageManagerHreflang' %}
 </head>
 
 
-<body>
-{% include './components/Nav.twig' %}
-{% block content %}
 
+{% include './components/Nav.twig' %}
+
+{% block content %}
+    {% hook 'languageManagerNavigation' %}
 {% endblock %}
-</body>
+
 </html>

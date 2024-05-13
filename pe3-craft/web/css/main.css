@@ -59,12 +59,12 @@
   display: flex;
   background-color: antiquewhite;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: "sono";
+  font-family: "sono", monospace;
 }
 
 .company-info {
-  flex: 1;
   padding: 25px 20px;
+  width: 50%;
 }
 .company-info p {
   margin: 2rem 0 0 2rem;
@@ -74,7 +74,7 @@ h2 {
   text-align: center;
 }
 
-form {
+.form {
   flex: 1;
   padding: 20px;
   display: flex;
@@ -110,8 +110,8 @@ input[type=submit] {
   font-size: 18px;
 }
 
-body {
-  background: linear-gradient(rgba(211, 211, 211, 0.6), rgba(211, 211, 211, 0.4)), url("../assets/Layer 3.png");
+.body {
+  background: linear-gradient(rgba(211, 211, 211, 0.6), rgba(211, 211, 211, 0.4)), url("../../assets/Layer 3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,7 +122,7 @@ body {
   background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
-  font-family: "sono";
+  font-family: "sono", monospace;
 }
 .navbar ul {
   display: flex;
@@ -177,7 +177,7 @@ body {
 }
 .gallery .gallery-title {
   text-align: center;
-  font-family: "sono";
+  font-family: "sono", monospace, monospace;
 }
 .gallery .cards-wrapper {
   display: flex;
@@ -219,12 +219,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "sono";
+  font-family: "sono", monospace;
   bottom: 0;
 }
 
 .main-heading {
-  font-family: "sono";
+  font-family: "sono", monospace;
   font-size: 40px;
   font-weight: 300;
   color: #BEA888;
