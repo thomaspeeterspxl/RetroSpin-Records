@@ -8,13 +8,13 @@
         <p>Zijn er producten die u misschien mist, kom dan zeker eens langs in de winkel.</p>
     </section>
     <section id="products">
-        {% set Producten = craft.entries.section('producten').all() %}
+        {% set Producten = craft.entries.section('productitems').all() %}
         {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price').all() %}#}
         {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price DESC').limit(3).all() %}#}
 
         {% if Producten|length > 0 %}
         <main class="main">
-                {% for productimage in Producten %}
+                {% for productitem in Producten %}
                     {% include 'components/ProductCardComponent.twig' %}
                 {% endfor %}
         </main>

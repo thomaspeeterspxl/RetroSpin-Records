@@ -1,4 +1,4 @@
-dateModified: 1715599709
+dateModified: 1715624020
 elementSources:
   craft\elements\Entry:
     -
@@ -59,6 +59,7 @@ meta:
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
     970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
     05237e69-d31f-487e-acc3-b488f23884cc: Contact # Contact
+    6411c4b0-5941-4289-b744-2a778fb9d3a8: ProductItems # ProductItems
     7790ae66-c72f-4345-8a12-d79cb11d673f: test # test
     8435c819-c72b-466f-a620-16ba7f8654fc: ProductImage # ProductImage
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
@@ -72,6 +73,7 @@ meta:
     c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
+    e6ffaf05-68f7-4447-9bc6-4a47a9038a23: ProductItems # ProductItems
     e8fc032b-2654-4df7-aece-a0f834278108: Product # Product
     ed333ccf-fb85-4fd6-a36a-df827218fef4: Winkelmand # Winkelmand
     f8baba0a-a85e-48c8-b22e-b89707111f22: 'Public Schema' # Public Schema

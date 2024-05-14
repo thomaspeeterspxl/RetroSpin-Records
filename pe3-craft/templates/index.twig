@@ -109,23 +109,38 @@
     {#        </div> #}
     {#    </section> #}
 
-    {% set Products = craft.entries.section('homepage').all() %}
+{#    {% set Products = craft.entries.section('homepage').all() %}#}
 {#    {% set products = craft.entries.section('homepage').orderBy('productvoorraad').all()  %}#}
 {#    {{ d(products) }}#}
-    {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price').all() %} #}
+{#    #}{#        {% set sneakers = craft.entries.section('sneakers').orderBy('price').all() %} #}
 {#    {% set Products = craft.entries.section('homepage').orderBy('productvoorraad ').limit(5).all() %}#}
 
-    {% if Products|length > 0 %}
+{#    {% if Products|length > 0 %}#}
+{#        <section class="gallery">#}
+{#            <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>#}
+{#            <div class="cards-wrapper">#}
+{#                {% for product in Products %}#}
+{#                    {% include 'components/ProductCards.twig' %}#}
+{#                {% endfor %}#}
+{#            </div>#}
+{#        </section>#}
+{#    {% endif %}#}
+
+{#    {% set ProductItems = craft.entries.section('productitems').all() %}#}
+    {#    {% set products = craft.entries.section('homepage').orderBy('productvoorraad').all()  %}#}
+    {#    {{ d(products) }}#}
+            {% set ProductItems = craft.entries.section('productitems').orderBy('productvoorraad DESC').limit(5).all() %}
+    {#    {% set Products = craft.entries.section('homepage').orderBy('productvoorraad ').limit(5).all() %}#}
+
+    {% if ProductItems|length > 0 %}
         <section class="gallery">
             <h1 class="gallery-title">{{ entry.indekijkertitle }}</h1>
             <div class="cards-wrapper">
-                {% for product in Products %}
+                {% for product in ProductItems %}
                     {% include 'components/ProductCards.twig' %}
                 {% endfor %}
             </div>
         </section>
-
-
     {% endif %}
     <section id="contact">
         <div class="container">
