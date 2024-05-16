@@ -1,4 +1,4 @@
-dateModified: 1715624020
+dateModified: 1715862442
 elementSources:
   craft\elements\Entry:
     -
@@ -44,20 +44,24 @@ meta:
     0cadc980-a6c8-47f1-92b8-5964fb4a57fe: NavImage # NavImage
     1a3afe43-ff07-4247-9e9b-d0d60572a7f8: ProductDescription # ProductDescription
     3c9a23a8-8e01-47af-86cf-fc3bab68d234: BedrijfsInfo # BedrijfsInfo
+    3cce3200-66d8-45a6-85e6-b8896b2ddb08: ProductType # ProductType
     3fd565b9-1770-4121-b7e2-688ae9546c48: Headertitle # Headertitle
     5c7009ad-02cd-4079-9976-93a27f92259f: ProductPrijs # ProductPrijs
     6a9618e3-9163-4cc8-b8f2-c0580ffbdff1: Contact # Contact
     6bbad967-7648-4693-aa58-3ff8c708520b: RetroSpin-Records # RetroSpin-Records
     6d50525a-4b60-4733-b8ff-1df46ef96721: DetailPagina # DetailPagina
+    8bd3b75d-70f5-4780-8948-77bdc9780a45: Artist # Artist
     41ffc207-9513-4d98-8449-ce070f4f9f77: iconline # iconline
     51c25c0c-0449-4720-83c6-2d6192dba44c: ProductVoorraad # ProductVoorraad
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
     60bf57a9-d1de-4fa6-8e6c-572ea479e692: Detailbutton # Detailbutton
     068c71da-c8ca-4d46-92d6-65566e35a01b: New # New
+    78f9f1de-8fa1-4255-9390-c423ed7d00bf: Artist # Artist
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
     379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
     970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
+    3713d93f-5d61-4dcd-b104-0284c7a70d47: ProductType # ProductType
     05237e69-d31f-487e-acc3-b488f23884cc: Contact # Contact
     6411c4b0-5941-4289-b744-2a778fb9d3a8: ProductItems # ProductItems
     7790ae66-c72f-4345-8a12-d79cb11d673f: test # test
@@ -65,12 +69,14 @@ meta:
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
     36842d5e-8e26-448d-a143-83a8e327e965: 'Log in' # Log in
     0499757a-15c6-47cc-b779-37738fc23704: test # test
+    687401b3-f7ba-4623-be95-4ad02b1224dc: Artist # Artist
     a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
     a77e5a9c-e6c3-4f98-a42d-b4725f35b271: 'Contact Form' # Contact Form
     ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
     ad28a1db-6fa9-41e1-bb1e-2c8b9a7587f4: Nav # Nav
     b601c2f0-f588-4949-9f96-b0365eba500d: DetailPagina # DetailPagina
     c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
+    ca762cf5-a857-4b06-9ad0-168d13e7c0f9: ProductType # ProductType
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
     e6ffaf05-68f7-4447-9bc6-4a47a9038a23: ProductItems # ProductItems
