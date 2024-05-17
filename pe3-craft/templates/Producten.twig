@@ -23,7 +23,8 @@
     }) %}
 {% endif %}
 
-{% set Producten = productItemsQuery.all() %}
+{% paginate productItemsQuery.limit(6) as pageInfo, Producten %}
+
 {% set artists = craft.entries.section('artist').all() %}
 {% set productTypes = craft.entries.section('producttype').all() %}
 
@@ -34,7 +35,11 @@
         <p>Zijn er producten die u misschien mist, kom dan zeker eens langs in de winkel.</p>
     </section>
     <section id="products">
-        <form action="{{ craft.app.request.url }}" class="filter">
+        <form action="{{ craft.app.request.url }}" method="get" class="filter">
+            <label for="search">Search</label>
+            <input type="text" name="search" id="search" value="{{ searchParam }}" class="filter-text">
+            <button type="submit">Filter</button>
+
             <legend>Artists</legend>
             {% for artist in artists %}
                 <label class="filter-label">
@@ -43,7 +48,6 @@
                 </label><br>
             {% endfor %}
 
-
             <legend>Product Types</legend>
             {% for productType in productTypes %}
                 <label class="filter-label">
@@ -51,15 +55,32 @@
                     <span class="filter-text">{{ productType.title }}</span>
                 </label><br>
             {% endfor %}
-            <label for="search" >Search</label>
-            <input type="text" name="search" id="search" value="{{ searchParam }}" class="filter-text">
-            <button type="submit" >Filter</button>
-        </form>
 
+            {% if pageInfo.currentPage > 1 %}
+                <input type="hidden" name="p" value="{{ pageInfo.currentPage }}">
+            {% endif %}
+        </form>
         <main class="main">
             {% for productitem in Producten %}
                 {% include 'components/ProductCardComponent.twig' %}
             {% endfor %}
         </main>
     </section>
+{#    <nav class="pagination">#}
+{#        {% if pageInfo.prevUrl %}#}
+{#            <a href="{{ pageInfo.prevUrl }}">Previous Page</a>#}
+{#        {% endif %}#}
+{#        {% if pageInfo.nextUrl %}#}
+{#            <a href="{{ pageInfo.nextUrl }}">Next Page</a>#}
+{#        {% endif %}#}
+{#    </nav>#}
+    <nav class="pagination">
+    <span class="pagination-control" {% if pageInfo.prevUrl %} onclick="location.href='{{ pageInfo.prevUrl }}'" {% else %} disabled {% endif %}>
+        <i class="bx bx-chevron-left"></i>
+    </span>
+        <span>{{ pageInfo.currentPage }} / {{ pageInfo.totalPages }}</span>
+        <span class="pagination-control" {% if pageInfo.nextUrl %} onclick="location.href='{{ pageInfo.nextUrl }}'" {% else %} disabled {% endif %}>
+        <i class="bx bx-chevron-right"></i>
+    </span>
+    </nav>
 {% endblock %}
