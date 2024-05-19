@@ -35,7 +35,7 @@
         <p>Zijn er producten die u misschien mist, kom dan zeker eens langs in de winkel.</p>
     </section>
     <section id="products">
-        <form action="{{ craft.app.request.url }}" method="get" class="filter">
+        <form id="filterForm" action="{{ craft.app.request.url }}" method="get" class="filter">
             <label for="search">Search</label>
             <input type="text" name="search" id="search" value="{{ searchParam }}" class="filter-text">
             <button type="submit">Filter</button>
@@ -66,14 +66,6 @@
             {% endfor %}
         </main>
     </section>
-{#    <nav class="pagination">#}
-{#        {% if pageInfo.prevUrl %}#}
-{#            <a href="{{ pageInfo.prevUrl }}">Previous Page</a>#}
-{#        {% endif %}#}
-{#        {% if pageInfo.nextUrl %}#}
-{#            <a href="{{ pageInfo.nextUrl }}">Next Page</a>#}
-{#        {% endif %}#}
-{#    </nav>#}
     <nav class="pagination">
     <span class="pagination-control" {% if pageInfo.prevUrl %} onclick="location.href='{{ pageInfo.prevUrl }}'" {% else %} disabled {% endif %}>
         <i class="bx bx-chevron-left"></i>
@@ -83,4 +75,17 @@
         <i class="bx bx-chevron-right"></i>
     </span>
     </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('filterForm');
+            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    form.submit();
+                });
+            });
+        });
+    </script>
 {% endblock %}

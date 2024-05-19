@@ -1,4 +1,4 @@
-dateModified: 1715862442
+dateModified: 1716116530
 elementSources:
   craft\elements\Entry:
     -
@@ -55,9 +55,11 @@ meta:
     51c25c0c-0449-4720-83c6-2d6192dba44c: ProductVoorraad # ProductVoorraad
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
     60bf57a9-d1de-4fa6-8e6c-572ea479e692: Detailbutton # Detailbutton
+    60e14386-d98e-472d-b36e-f1b36862231a: detail # detail
     068c71da-c8ca-4d46-92d6-65566e35a01b: New # New
     78f9f1de-8fa1-4255-9390-c423ed7d00bf: Artist # Artist
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
+    287ea58b-288a-463c-8b27-f2c436dc78a2: 'Pagina''s' # Pagina's
     379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
     970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
@@ -69,6 +71,7 @@ meta:
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
     36842d5e-8e26-448d-a143-83a8e327e965: 'Log in' # Log in
     0499757a-15c6-47cc-b779-37738fc23704: test # test
+    574678d9-6d23-4f17-9924-28dc4cfe63f0: contentblock1 # contentblock1
     687401b3-f7ba-4623-be95-4ad02b1224dc: Artist # Artist
     a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
     a77e5a9c-e6c3-4f98-a42d-b4725f35b271: 'Contact Form' # Contact Form
@@ -78,10 +81,13 @@ meta:
     c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
     ca762cf5-a857-4b06-9ad0-168d13e7c0f9: ProductType # ProductType
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
+    d78f2d4f-56f4-4ad8-a18e-87be980b1545: contentblock1 # contentblock1
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
+    e4c3607c-3ce2-48e3-bbcb-a827344b5c6d: Detail # Detail
     e6ffaf05-68f7-4447-9bc6-4a47a9038a23: ProductItems # ProductItems
     e8fc032b-2654-4df7-aece-a0f834278108: Product # Product
     ed333ccf-fb85-4fd6-a36a-df827218fef4: Winkelmand # Winkelmand
+    eeaf280f-fd5a-4c03-84be-f4e114ed1a16: Detail # Detail
     f8baba0a-a85e-48c8-b22e-b89707111f22: 'Public Schema' # Public Schema
     f94e0e22-1784-4adf-aeb5-2e1084448eb3: ProductTitle # ProductTitle
     f37420bd-f257-4b9a-bd8e-9fb41372b296: intro # intro

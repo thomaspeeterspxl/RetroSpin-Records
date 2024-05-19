@@ -11,6 +11,7 @@
 {# </div>#}
 {# {% endfor %}#}
 
+
  <div class="main-products">
      <h2>{{ productitem.producttitle}}</h2>
      {% set ProductImage = productitem.productimage.one()%}
@@ -19,7 +20,16 @@
      {% endif %}
      <p class="main-products-tekst">{{ productitem.productdescription }}</p>
           <p class="main-products-prijs">Price:  {{ productitem.productprijs | money }}</p>
-     <a href="http://www.retrospin-records.be/detailpagina" target="_self">
-         <button type="button" class="button-detail">Read More</button>
+{#     {% for entry in craft.entries.section('productitems').all() %}#}
+     {% for entry in craft.entries.section('productitems').all() %}
+{% if not entry.detailbutton.isEmpty() %}
+     <a href="{{ entry.detailbutton.url }}" target="{{ entry.detailbutton.target }}">
+         <button type="button" class="button-detail">{{ entry.detailbutton.text }}</button>
      </a>
+{% endif %}
+     {% endfor %}
+
  </div>
+
+
+{# Outputs: <a href="http://my-site.test/some-url" target="_blank">Some URL</a> #}

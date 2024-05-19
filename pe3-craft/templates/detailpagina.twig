@@ -1,16 +1,10 @@
 {% extends './_layout.twig' %}
 
 {% block content %}
-    {% set Productdetail = craft.entries.section('detailpagina').all() %}
-    {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price').all() %}#}
-    {#        {% set sneakers = craft.entries.section('sneakers').orderBy('price DESC').limit(3).all() %}#}
-
-    {% if Productdetail|length > 0 %}
-<div class="detail">
-            {% for productimage in Productdetail %}
-                {% include 'components/DetailCard.twig' %}
-            {% endfor %}
-        </div>
-    {% endif %}
-
+    {% set detailP = craft.entries.section('detail').limit (1)%}
+            <div class="detail">
+                {% for detail in detailP %}
+                    {% include 'components/DetailCard.twig' %}
+                {% endfor %}
+            </div>
 {% endblock %}

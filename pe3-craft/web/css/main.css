@@ -110,6 +110,10 @@ input[type=submit] {
   font-size: 18px;
 }
 
+.fui-submit {
+  background-color: #84B5A5 !important;
+}
+
 .body {
   background: linear-gradient(rgba(211, 211, 211, 0.6), rgba(211, 211, 211, 0.4)), url("../../assets/Layer 3.png");
   background-position: center;
