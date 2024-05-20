@@ -111,6 +111,7 @@
 
 .container {
   display: flex;
+  justify-content: space-around;
   background-color: antiquewhite;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: "sono", monospace;
@@ -167,6 +168,10 @@ input[type=submit] {
 .fui-submit {
   background-color: #84B5A5 !important;
   border-color: #84B5A5 !important;
+}
+
+.fui-row {
+  width: 30rem !important;
 }
 
 .body {

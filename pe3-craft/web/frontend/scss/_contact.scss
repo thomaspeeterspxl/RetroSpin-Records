@@ -2,6 +2,7 @@
 
 .container {
   display: flex;
+  justify-content: space-around;
   background-color: antiquewhite;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: $font-Sono;
@@ -57,7 +58,11 @@ h2 {
     cursor: pointer;
     font-size: 18px;
   }
+
 .fui-submit{
   background-color: #84B5A5 !important;
   border-color: #84B5A5 !important;
+}
+.fui-row{
+  width: 30rem !important;
 }
