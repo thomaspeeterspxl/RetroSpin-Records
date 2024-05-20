@@ -49,3 +49,56 @@ $font-nunito: 'Nunito', sans-serif;
   height: 100%;
 }
 
+.blockbuilder {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.block {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.block-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.block-title {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.image-left .block-body {
+  flex-direction: row;
+}
+
+.image-right .block-body {
+  flex-direction: row-reverse;
+}
+
+.block-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  max-width: 50%;
+  flex-shrink: 0;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.text {
+  flex: 1;
+}

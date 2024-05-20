@@ -1,7 +1,12 @@
 {% set mainNav = craft.navigate.raw('mainNav') %}
+
+{% set navImage = NavPhoto.navimage.one() %}
 <header>
     <nav class="navbar">
-        <img src="{{ entry.navimage.one().url}}" alt="">
+{#        <img src="{{ entry.navimage.one().url}}" alt="">#}
+        {% if navImage %}
+            <img src="{{ navImage.url }}" alt="Navigation Image">
+        {% endif %}
         <ul>
             {% for node in mainNav %}
                 <li>
@@ -12,3 +17,10 @@
     </nav>
 
 </header>
+
+
+
+
+
+
+

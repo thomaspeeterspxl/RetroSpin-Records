@@ -1,4 +1,4 @@
-dateModified: 1716116530
+dateModified: 1716225624
 elementSources:
   craft\elements\Entry:
     -
@@ -42,10 +42,13 @@ fs:
 meta:
   __names__:
     0cadc980-a6c8-47f1-92b8-5964fb4a57fe: NavImage # NavImage
+    0e75f23a-630e-492e-bd49-2a431c57d5ef: Form # Form
     1a3afe43-ff07-4247-9e9b-d0d60572a7f8: ProductDescription # ProductDescription
+    3b9e86c1-26ac-4cf1-a83e-3de7aae791f4: NavImage # NavImage
     3c9a23a8-8e01-47af-86cf-fc3bab68d234: BedrijfsInfo # BedrijfsInfo
     3cce3200-66d8-45a6-85e6-b8896b2ddb08: ProductType # ProductType
     3fd565b9-1770-4121-b7e2-688ae9546c48: Headertitle # Headertitle
+    5ae7c15e-6d96-48b1-936f-fff7230f3b14: text # text
     5c7009ad-02cd-4079-9976-93a27f92259f: ProductPrijs # ProductPrijs
     6a9618e3-9163-4cc8-b8f2-c0580ffbdff1: Contact # Contact
     6bbad967-7648-4693-aa58-3ff8c708520b: RetroSpin-Records # RetroSpin-Records
@@ -53,6 +56,7 @@ meta:
     8bd3b75d-70f5-4780-8948-77bdc9780a45: Artist # Artist
     41ffc207-9513-4d98-8449-ce070f4f9f77: iconline # iconline
     51c25c0c-0449-4720-83c6-2d6192dba44c: ProductVoorraad # ProductVoorraad
+    52c5f9cc-b230-4368-a382-42f7225f2816: afbeelding # afbeelding
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
     60bf57a9-d1de-4fa6-8e6c-572ea479e692: Detailbutton # Detailbutton
     60e14386-d98e-472d-b36e-f1b36862231a: detail # detail
@@ -61,6 +65,7 @@ meta:
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
     287ea58b-288a-463c-8b27-f2c436dc78a2: 'Pagina''s' # Pagina's
     379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
+    424e24fe-a8a0-4628-9778-5dff44120079: ProductBTW # ProductBTW
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
     970bd5ec-844c-43b4-aab3-7ccff9fe4d2d: Producten # Producten
     3713d93f-5d61-4dcd-b104-0284c7a70d47: ProductType # ProductType
@@ -69,27 +74,37 @@ meta:
     7790ae66-c72f-4345-8a12-d79cb11d673f: test # test
     8435c819-c72b-466f-a620-16ba7f8654fc: ProductImage # ProductImage
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
+    17839bcb-3da0-41ae-af98-5c4f0d1f1550: block1 # block1
     36842d5e-8e26-448d-a143-83a8e327e965: 'Log in' # Log in
     0499757a-15c6-47cc-b779-37738fc23704: test # test
     574678d9-6d23-4f17-9924-28dc4cfe63f0: contentblock1 # contentblock1
     687401b3-f7ba-4623-be95-4ad02b1224dc: Artist # Artist
+    6316215a-f119-4208-877a-2439e0c5fa53: 'Pagina''ss' # Pagina'ss
     a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
     a77e5a9c-e6c3-4f98-a42d-b4725f35b271: 'Contact Form' # Contact Form
     ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
     ad28a1db-6fa9-41e1-bb1e-2c8b9a7587f4: Nav # Nav
+    b8ca29ff-0cf6-4c9e-b9fd-2bde72bc0f4b: tekst+afbeelding # tekst+afbeelding
+    b87d1e7d-a0c2-4058-915b-bf56823e2790: 'Pagina''s' # Pagina's
     b601c2f0-f588-4949-9f96-b0365eba500d: DetailPagina # DetailPagina
     c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
     ca762cf5-a857-4b06-9ad0-168d13e7c0f9: ProductType # ProductType
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
     d78f2d4f-56f4-4ad8-a18e-87be980b1545: contentblock1 # contentblock1
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
+    db0e1abb-7785-43eb-b262-78a84e41d3d6: Formulier # Formulier
+    e0fe90f8-3bc1-4fe7-8067-ea3ad37f78aa: Blockbuilder # Blockbuilder
     e4c3607c-3ce2-48e3-bbcb-a827344b5c6d: Detail # Detail
     e6ffaf05-68f7-4447-9bc6-4a47a9038a23: ProductItems # ProductItems
     e8fc032b-2654-4df7-aece-a0f834278108: Product # Product
+    e240ab47-60dd-4276-a6d9-652f040e5769: text # text
+    e429c944-15f5-40af-9395-d33308a77714: afbeelding # afbeelding
     ed333ccf-fb85-4fd6-a36a-df827218fef4: Winkelmand # Winkelmand
     eeaf280f-fd5a-4c03-84be-f4e114ed1a16: Detail # Detail
+    f2ba642b-d57b-4f37-9825-0c310d159bdb: Productblok # Productblok
     f8baba0a-a85e-48c8-b22e-b89707111f22: 'Public Schema' # Public Schema
     f94e0e22-1784-4adf-aeb5-2e1084448eb3: ProductTitle # ProductTitle
+    f660a6d7-0cee-4fc3-a616-42011d7a8110: Productblok # Productblok
     f37420bd-f257-4b9a-bd8e-9fb41372b296: intro # intro
     fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
     fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten

@@ -13,13 +13,13 @@
 
 
  <div class="main-products">
-     <h2>{{ productitem.producttitle}}</h2>
-     {% set ProductImage = productitem.productimage.one()%}
-     {% if ProductImage %}
-         <img src="{{ ProductImage.url }}" class="main-products-foto">
+     <h2>{{ productitems.producttitle}}</h2>
+     {% set productImage = productitems.productimage.one()%}
+     {% if productImage %}
+         <img src="{{ productImage.url }}" class="main-products-foto">
      {% endif %}
-     <p class="main-products-tekst">{{ productitem.productdescription }}</p>
-          <p class="main-products-prijs">Price:  {{ productitem.productprijs | money }}</p>
+     <p class="main-products-tekst">{{ productitems.productdescription }}</p>
+          <p class="main-products-prijs">Price:  {{ productitems.productprijs | money }}</p>
 {#     {% for entry in craft.entries.section('productitems').all() %}#}
 {#     {% for entry in craft.entries.section('productitems').all() %}#}
 {#{% if not entry.detailbutton.isEmpty() %}#}
@@ -28,7 +28,7 @@
 {#     </a>#}
 {#{% endif %}#}
 {#     {% endfor %}#}
-     <a href="{{ productitem.url }}">
+     <a href="{{ productitems.url }}">
          <button type="button" class="button-detail">Lees meer</button>
      </a>
  </div>

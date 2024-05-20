@@ -1,10 +1,22 @@
 {% extends './_layout.twig' %}
 
 {% block content %}
-    {% set detailP = craft.entries.section('detail').limit (1)%}
+{#    {% set detailP = craft.entries.section('detail').limit (1)%}#}
+    {% set detailP = craft.entries.section('detail')%}
             <div class="detail">
                 {% for detail in detailP %}
                     {% include 'components/DetailCard.twig' %}
                 {% endfor %}
             </div>
+
+{#    {% include './_snippits/_blocks/_textImageBlock.twig' %}#}
+
+{#    <div class="blockbuilder">#}
+{#        {% set blocks = entry.blockbuilder.all() %}#}
+{#        {% for block in blocks %}#}
+{#            <div class="block-body">#}
+{#                {% include './_snippits/_blocks/_textImageBlock.twig' %}#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
 {% endblock %}

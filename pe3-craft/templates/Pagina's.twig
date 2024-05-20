@@ -1,0 +1,10 @@
+{% extends './_layout.twig' %}
+
+{% set Producten = craft.entries.section('paginas').all() %}
+{% block content %}
+<main class="main">
+    {% for productitems in Producten %}
+        {% include 'components/ProductCardComponent2.twig' %}
+    {% endfor %}
+</main>
+{% endblock %}
