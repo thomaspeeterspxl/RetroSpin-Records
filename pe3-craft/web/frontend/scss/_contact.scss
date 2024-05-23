@@ -26,7 +26,8 @@ h2 {
     flex: 1;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    //flex-direction: column;
     //width: 80%;
   }
 
@@ -62,7 +63,11 @@ h2 {
 .fui-submit{
   background-color: #84B5A5 !important;
   border-color: #84B5A5 !important;
+  width: 35rem !important;
+}
+.fui-i{
+  font-family: $font-Sono !important;
 }
 .fui-row{
-  width: 30rem !important;
+  width: 35rem !important;
 }

@@ -133,7 +133,7 @@ h2 {
   flex: 1;
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 label {
@@ -168,10 +168,15 @@ input[type=submit] {
 .fui-submit {
   background-color: #84B5A5 !important;
   border-color: #84B5A5 !important;
+  width: 35rem !important;
+}
+
+.fui-i {
+  font-family: "sono", monospace !important;
 }
 
 .fui-row {
-  width: 30rem !important;
+  width: 35rem !important;
 }
 
 .body {

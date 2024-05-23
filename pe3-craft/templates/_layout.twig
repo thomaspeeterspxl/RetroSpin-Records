@@ -1,6 +1,6 @@
-
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="{{ craft.app.language }}">
+ <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +12,22 @@
           href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 {#    <link rel="stylesheet" href="frontend/style.css">#}
 {#    <link rel="stylesheet" href="css/main.css">#}
-    <link rel="stylesheet" href="{{ siteUrl('css/main.css') }}">
-    {% hook 'languageManagerHreflang' %}
-</head>
+    <link rel="stylesheet" href="{{ siteUrl('../css/main.css') }}">
+ </head>
 
+ <header>
+        {% include './components/Nav.twig' %}
+ </header>
+{# <nav>#}
+{#    <ul>#}
+{#        <li><a href="{{ craft.app.sites.getSiteByHandle('default').baseUrl }}">Nederlands</a></li>#}
+{#        <li><a href="{{ craft.app.sites.getSiteByHandle('english').baseUrl }}">Engels</a></li>#}
+{#        <li><a href="{{ craft.app.sites.getSiteByHandle('german').baseUrl }}">Duits</a></li>#}
+{#    </ul>#}
+{# </nav>#}
+ {% block content %}
 
+ {% endblock %}
 
-{% include './components/Nav.twig' %}
-{% block content %}
+ </html>
 
-{% endblock %}
-
-</html>

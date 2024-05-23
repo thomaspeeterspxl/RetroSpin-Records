@@ -1,11 +1,15 @@
 {% extends './_layout.twig' %}
 
 {% block content %}
-    <div class="flex justify-center">
-        <div class="form">
-            {{ craft.formie.renderForm('contactform') }}
-        </div>
-
-    </div>
+{#    <body class="body">#}
+{#    <div class="flex justify-center">#}
+{#        <div class="form">#}
+{#            {{ craft.formie.renderForm('contactform') }}#}
+{#        </div>#}
+{#    </div>#}
+{#    </body>#}
+<div class="form">
+    {{ craft.formie.renderForm('contactformulier') }}
+</div>
 
 {% endblock %}

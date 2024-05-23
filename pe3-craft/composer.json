@@ -5,6 +5,7 @@
     "craftcms/cms": "^5.0.0",
     "elleracompany/craft-cookie-consent": "5.0.1",
     "pierrestoffe/craft-language-redirector": "3.1.1",
+    "solspace/craft-freeform": "5.2.2",
     "spacemonk/craft-language-manager": "1.1.0",
     "studioespresso/craft-dumper": "^5.0",
     "studioespresso/craft-navigate": "^5.0",
@@ -36,5 +37,12 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }
