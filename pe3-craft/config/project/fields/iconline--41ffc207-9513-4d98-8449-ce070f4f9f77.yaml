@@ -4,5 +4,5 @@ instructions: null
 name: iconline
 searchable: true
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Icon

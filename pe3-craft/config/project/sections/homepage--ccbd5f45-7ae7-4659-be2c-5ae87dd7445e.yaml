@@ -19,6 +19,11 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
+  5d346946-3841-458d-9ae1-08b4e10bf8fe: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
   9155b977-ae75-4e7e-aa57-cfcd0453780e: # RetroSpin-Records
     enabledByDefault: true
     hasUrls: true

@@ -1,4 +1,4 @@
-adminOnly: 1
+adminOnly: 0
 allowSources: '*'
 enabledSiteGroups: '*'
 handle: mainNav

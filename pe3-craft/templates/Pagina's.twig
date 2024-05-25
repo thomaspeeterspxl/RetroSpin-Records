@@ -1,10 +1,20 @@
 {% extends './_layout.twig' %}
 
-{% set Producten = craft.entries.section('paginas').all() %}
+{#{% set Producten = craft.entries.section('paginas').all() %}#}
 {% block content %}
-<main class="main">
-    {% for productitems in Producten %}
-        {% include 'components/ProductCardComponent2.twig' %}
-    {% endfor %}
-</main>
+{#<main class="main">#}
+{#    {% for productitems in Producten %}#}
+{#        {% include 'components/ProductCardComponent2.twig' %}#}
+{#    {% endfor %}#}
+{#</main>#}
+    {% include './_snippits/_blocks/_textImageBlock.twig' %}
+
+    <div class="blockbuilder">
+        {% set blocks = entry.blockbuilder.all() %}
+        {% for block in blocks %}
+            <div class="block-body">
+                {% include './_snippits/_blocks/_textImageBlock.twig' %}
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}

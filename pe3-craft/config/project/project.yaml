@@ -1,4 +1,4 @@
-dateModified: 1716225624
+dateModified: 1716551156
 elementSources:
   craft\elements\Entry:
     -
@@ -50,6 +50,7 @@ meta:
     3fd565b9-1770-4121-b7e2-688ae9546c48: Headertitle # Headertitle
     5ae7c15e-6d96-48b1-936f-fff7230f3b14: text # text
     5c7009ad-02cd-4079-9976-93a27f92259f: ProductPrijs # ProductPrijs
+    5d346946-3841-458d-9ae1-08b4e10bf8fe: English # English
     6a9618e3-9163-4cc8-b8f2-c0580ffbdff1: Contact # Contact
     6bbad967-7648-4693-aa58-3ff8c708520b: RetroSpin-Records # RetroSpin-Records
     6d50525a-4b60-4733-b8ff-1df46ef96721: DetailPagina # DetailPagina
@@ -108,6 +109,7 @@ meta:
     f37420bd-f257-4b9a-bd8e-9fb41372b296: intro # intro
     fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
     fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten
+    fcf1ddcc-86c7-417b-9260-88f9560a7c77: drop # drop
 plugins:
   cookie-consent:
     edition: standard
@@ -176,7 +178,7 @@ plugins:
       showLanguageInThatLanguage: true
   language-redirector:
     edition: standard
-    enabled: true
+    enabled: false
     licenseKey: SEDB170UJFN0F3R2ZNWWKGT6
     schemaVersion: 1.0.0
   navigate:
