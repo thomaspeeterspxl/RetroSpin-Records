@@ -30,9 +30,9 @@
 
 {% block content %}
     <section class="tekst-overzichtspagina">
-        <h1>catalogus</h1>
-        <p>Hier vind u een overzicht van alle producten die beschikbaar zijn op deze webshop.</p>
-        <p>Zijn er producten die u misschien mist, kom dan zeker eens langs in de winkel.</p>
+        <h1>{{ entry.producttitle }}</h1>
+        <p>{{ entry.intro }}</p>
+        <p>{{ entry.intro2 }}</p>
     </section>
     <section id="products">
         <form id="filterForm" action="{{ craft.app.request.url }}" method="get" class="filter">

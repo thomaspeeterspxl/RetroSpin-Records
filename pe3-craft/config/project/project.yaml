@@ -1,4 +1,4 @@
-dateModified: 1716900945
+dateModified: 1716901802
 elementSources:
   craft\elements\Entry:
     -
@@ -68,7 +68,6 @@ meta:
     068c71da-c8ca-4d46-92d6-65566e35a01b: New # New
     78f9f1de-8fa1-4255-9390-c423ed7d00bf: Artist # Artist
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
-    287ea58b-288a-463c-8b27-f2c436dc78a2: 'Pagina''s' # Pagina's
     379e2de7-1bea-4a22-bf65-a68c42c6ee49: Winkelmand # Winkelmand
     424e24fe-a8a0-4628-9778-5dff44120079: ProductBTW # ProductBTW
     853e5953-2a62-40f5-b169-34fb5cc7638c: Footer # Footer
@@ -78,12 +77,11 @@ meta:
     6411c4b0-5941-4289-b744-2a778fb9d3a8: ProductItems # ProductItems
     8435c819-c72b-466f-a620-16ba7f8654fc: ProductImage # ProductImage
     9155b977-ae75-4e7e-aa57-cfcd0453780e: RetroSpin-Records # RetroSpin-Records
-    17839bcb-3da0-41ae-af98-5c4f0d1f1550: block1 # block1
     36842d5e-8e26-448d-a143-83a8e327e965: 'Log in' # Log in
     0499757a-15c6-47cc-b779-37738fc23704: test # test
     574678d9-6d23-4f17-9924-28dc4cfe63f0: contentblock1 # contentblock1
     687401b3-f7ba-4623-be95-4ad02b1224dc: Artist # Artist
-    6316215a-f119-4208-877a-2439e0c5fa53: 'Pagina''ss' # Pagina'ss
+    6316215a-f119-4208-877a-2439e0c5fa53: 'Pagina''s' # Pagina's
     a49dae5f-450f-4d0e-9eb9-dedc20c62792: Nav # Nav
     a77e5a9c-e6c3-4f98-a42d-b4725f35b271: 'Contact Form' # Contact Form
     ab7b2343-0f5a-4688-b505-15a13dc79b2e: InDeKijkerTitle # InDeKijkerTitle
@@ -93,7 +91,6 @@ meta:
     c4723b7b-587c-4b85-8396-05aa8c5e4aa7: 'Log in' # Log in
     ca762cf5-a857-4b06-9ad0-168d13e7c0f9: ProductType # ProductType
     ccbd5f45-7ae7-4659-be2c-5ae87dd7445e: Homepage # Homepage
-    d78f2d4f-56f4-4ad8-a18e-87be980b1545: contentblock1 # contentblock1
     d4095c47-8a8c-4120-8068-176a6b604331: 'titelTonen ' # titelTonen 
     d43220af-ee7e-4bc5-8482-2374c8815aca: Homepage # Homepage
     db0e1abb-7785-43eb-b262-78a84e41d3d6: Formulier # Formulier
