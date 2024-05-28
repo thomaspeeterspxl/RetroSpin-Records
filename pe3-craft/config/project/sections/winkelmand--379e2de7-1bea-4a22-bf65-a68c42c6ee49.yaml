@@ -22,6 +22,6 @@ siteSettings:
   9155b977-ae75-4e7e-aa57-cfcd0453780e: # RetroSpin-Records
     enabledByDefault: true
     hasUrls: true
-    template: winkelmand/_entry
+    template: error404.twig
     uriFormat: winkelmand
 type: single

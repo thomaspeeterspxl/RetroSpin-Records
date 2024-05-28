@@ -1,18 +1,3 @@
-{#<div class="block product-block">#}
-{#    <div class="products">#}
-{#        {% for product in block.productblok.all() %}#}
-{#            <div class="product-item">#}
-{#                <h3>{{ product.title }}</h3>#}
-{#                {% if product.productimage.one() %}#}
-{#                    <img src="{{ product.productimage.one().url }}" alt="{{ product.title }}">#}
-{#                {% endif %}#}
-{#                <p>{{ product.productdescription }}</p>#}
-{#                <!-- Add any other product fields you need to display -->#}
-{#            </div>#}
-{#        {% endfor %}#}
-{#    </div>#}
-{#</div>#}
-
 <div class="product-block">
         {% for productitem in block.productblok.all() %}
             <div class="main-products">

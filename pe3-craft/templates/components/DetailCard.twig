@@ -1,26 +1,23 @@
-{#{% for entry in craft.entries.section('detail').all() %}#}
-<section class="detail-card">
-     {% set detailImage = detail.productimage.one()%}
-     {% if detailImage %}
-         <div class="photo">
-             <img src="{{ detailImage.url }}" alt="" class="photo-detail">
-         </div>
-     {% endif %}
-            <div class="detail-description">
-                <h2 class="detail-description-title">{{ detail.producttitle }}</h2>
-                <h4 class="detail-description-name">artiest</h4>
-                <h1 class="detail-description-price">€{{ detail.productprijs | money }}</h1>
-                <h1 class="detail-description-price"> % BTW</h1>
-                <p class="detail-description-price"> stuks in voorraad</p>
-                {#                <p class="detail-description-price" v-if="isInStock">In Stock</p>#}
-                {#                <p class="detail-description-price" v-else><span>Out of Stock</span></p>#}
-                <p class="detail-description-tekst">{{ detail.productdescription }}</p>
-                <div class="quantity-container">
-                    <button class="quantity-button" @click="deleteOne()">-</button>
-                    <input class="counter_display" type="number" v-model="quantity" :max="isInStock ? product.voorraad : undefined" min="1">
-                    <button class="quantity-button" @click="addOne()">+</button>
-                </div>
-                <button @click="addToCart" class="button" id="button" :disabled="!isInStock || quantity > product.voorraad">Add To Cart</button>
-            </div>
-        </section>
+{#<section class="detail-card">#}
+{#     {% set detailImage = detail.productimage.one()%}#}
+{#     {% if detailImage %}#}
+{#         <div class="photo">#}
+{#             <img src="{{ detailImage.url }}" alt="" class="photo-detail">#}
+{#         </div>#}
+{#     {% endif %}#}
+{#            <div class="detail-description">#}
+{#                <h2 class="detail-description-title">{{ detail.producttitle }}</h2>#}
+{#                <h4 class="detail-description-name">artiest</h4>#}
+{#                <h1 class="detail-description-price">€{{ detail.productprijs | money }}</h1>#}
+{#                <h1 class="detail-description-price"> % BTW</h1>#}
+{#                <p class="detail-description-price"> stuks in voorraad</p>#}
+{#                <p class="detail-description-tekst">{{ detail.productdescription }}</p>#}
+{#                <div class="quantity-container">#}
+{#                    <button class="quantity-button" @click="deleteOne()">-</button>#}
+{#                    <input class="counter_display" type="number" v-model="quantity" :max="isInStock ? product.voorraad : undefined" min="1">#}
+{#                    <button class="quantity-button" @click="addOne()">+</button>#}
+{#                </div>#}
+{#                <button @click="addToCart" class="button" id="button" :disabled="!isInStock || quantity > product.voorraad">Add To Cart</button>#}
+{#            </div>#}
+{#        </section>#}
 {#{% endfor %}#}

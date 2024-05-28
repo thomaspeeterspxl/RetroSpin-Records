@@ -1,0 +1,15 @@
+{% extends './_layout.twig' %}
+{% set navImage = NavPhoto.navimage.one() %}
+
+{% block content %}
+    <body class="body">
+    <div class="page-404">
+        {% if navImage %}
+            <img src="{{ navImage.url }}" alt="Navigation Image" class="error-image">
+        {% endif %}
+        <h1>Oeps! Pagina Niet Gevonden</h1>
+        <p>We kunnen de pagina die je zoekt niet vinden.</p>
+        <a href="/">Ga Terug naar Home</a>
+    </div>
+    </body>
+{% endblock %}

@@ -1,14 +1,5 @@
 {% extends './_layout.twig' %}
 
-{#{% set ProductImage1 = entry.product.nth(0) %}#}
-{#{% set ProductImage2 = entry.product.nth(1) %}#}
-{#{% set ProductImage3 = entry.product.nth(2) %}#}
-{#{% set ProductImage4 = entry.product.nth(3) %}#}
-{#{% set ProductImage5 = entry.product.nth(4) %}#}
-
-{# {% set NavImage = entry.navimage.one() %} #}
-
-
 {% set entry = craft.entries.section('homepage').slug(craft.app.request.getSegment(1)).one() %}
 {% set icon = entry.iconline %}
 
@@ -44,7 +35,6 @@
     </section>
 
             {% set ProductItems = craft.entries.section('productitems').orderBy('productvoorraad DESC').limit(5).all() %}
-    {#    {% set Products = craft.entries.section('homepage').orderBy('productvoorraad ').limit(5).all() %}#}
 
     {% if ProductItems|length > 0 %}
         <section class="gallery">

@@ -5,8 +5,9 @@
         {% set blocks = entry.blockbuilder.all() %}
         {% for block in blocks %}
             <div>
-                {% include './_snippits/_blocks/_textImageBlock.twig' %}
+                {% include './_snippits/_blocks/_blockbuilder.twig' %}
             </div>
         {% endfor %}
     </div>
 {% endblock %}
+

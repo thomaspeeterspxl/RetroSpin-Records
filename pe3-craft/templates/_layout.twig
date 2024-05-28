@@ -10,21 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet"
           href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-{#    <link rel="stylesheet" href="frontend/style.css">#}
-{#    <link rel="stylesheet" href="css/main.css">#}
     <link rel="stylesheet" href="{{ siteUrl('../css/main.css') }}">
  </head>
 
  <header>
         {% include './components/Nav.twig' %}
  </header>
-{# <nav>#}
-{#    <ul>#}
-{#        <li><a href="{{ craft.app.sites.getSiteByHandle('default').baseUrl }}">Nederlands</a></li>#}
-{#        <li><a href="{{ craft.app.sites.getSiteByHandle('english').baseUrl }}">Engels</a></li>#}
-{#        <li><a href="{{ craft.app.sites.getSiteByHandle('german').baseUrl }}">Duits</a></li>#}
-{#    </ul>#}
-{# </nav>#}
  {% block content %}
 
  {% endblock %}

@@ -64,6 +64,7 @@ $font-nunito: 'Nunito', sans-serif;
 
 .block-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
 }
@@ -73,11 +74,11 @@ $font-nunito: 'Nunito', sans-serif;
   margin-bottom: 15px;
 }
 
-.block-body .image-left {
+.image-left .block-body {
   flex-direction: row-reverse;
 }
 
-.block-body .image-right {
+.image-right .block-body {
   flex-direction: row;
 }
 
@@ -102,6 +103,7 @@ $font-nunito: 'Nunito', sans-serif;
 .text {
   flex: 1;
 }
+
 
 .product-block{
   //width: 80%;

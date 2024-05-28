@@ -17,8 +17,6 @@
                 <h1 class="detail-description-price">{{ entry.productprijs | money }}</h1>
                 <h1 class="detail-description-price"> {{ entry.productbtw }}% BTW</h1>
                 <p class="detail-description-price"> {{ entry.productvoorraad }} stuks in voorraad</p>
-                {#                <p class="detail-description-price" v-if="isInStock">In Stock</p> #}
-                {#                <p class="detail-description-price" v-else><span>Out of Stock</span></p> #}
                 <p class="detail-description-tekst">{{ entry.productdescription }}</p>
                 <div class="quantity-container">
                     <button class="quantity-button" @click="deleteOne()">-</button>

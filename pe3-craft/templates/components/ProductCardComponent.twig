@@ -1,17 +1,3 @@
-
-{# {% for block in productimage.productimage %}#}
-{# <div class="main-products">#}
-{#     <h2>{{ block.producttitle}}</h2>#}
-{#     <img src="{{ block.url }}" alt="" class="main-products-foto">#}
-{#     <p class="main-products-tekst">{{ block.productdescription }}</p>#}
-{#     <p class="main-products-prijs">Price: € {{ block.productprijs }}</p>#}
-{#     <a href="http://www.retrospin-records.be/detailpagina" target="_self">#}
-{#         <button type="button" class="button-detail">Read More</button>#}
-{#     </a>#}
-{# </div>#}
-{# {% endfor %}#}
-
-
  <div class="main-products">
      <h2>{{ productitem.producttitle}}</h2>
      {% set ProductImage = productitem.productimage.one()%}
@@ -24,6 +10,3 @@
          <button type="button" class="button-detail">Lees meer</button>
      </a>
  </div>
-
-
-{# Outputs: <a href="http://my-site.test/some-url" target="_blank">Some URL</a> #}

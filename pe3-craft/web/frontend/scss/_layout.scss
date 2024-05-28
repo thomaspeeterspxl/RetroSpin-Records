@@ -109,7 +109,6 @@
   }
 }
 .footer{
-  //background-color: blue;
   background-color: $primary-color;
   height: 40px;
   padding: 5px;
@@ -120,3 +119,41 @@
   bottom: 0;
 }
 
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #333;
+}
+.page-404 h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family:$font-Sono;
+}
+.page-404 p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-family: $font-josefinSans;
+}
+.page-404 a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color:$tertiair-color;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-family: $font-josefinSans;
+}
+.page-404 a:hover {
+  background-color:$tertiair-color;
+}
+.page-404 .error-image {
+  max-width: 15%;
+  height: auto;
+  margin-bottom: 30px;
+}

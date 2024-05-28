@@ -1,8 +1,8 @@
 <div class="block">
     <div class="block-content {% if block.drop == 'links' %}image-left{% else %}image-right{% endif %}">
-{#        {% if block.titelTonen %}#}
-{#            <h2 class="block-title">{{ block.titel }}</h2>#}
-{#        {% endif %}#}
+        {% if block.titeltonen %}
+            <h2 class="block-title">{{ block.text2 }}</h2>
+        {% endif %}
         <div class="block-body">
             <div class="text">
                 <p>{{ block.text }}</p>

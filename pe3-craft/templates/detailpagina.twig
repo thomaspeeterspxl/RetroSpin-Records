@@ -1,13 +1,13 @@
-{% extends './_layout.twig' %}
+{#{% extends './_layout.twig' %}#}
 
-{% block content %}
-    {% set detailP = craft.entries.section('detail').limit (1)%}
-    {% set detailP = craft.entries.section('detail')%}
-            <div class="detail">
-                {% for detail in detailP %}
-                    {% include 'components/DetailCard.twig' %}
-                {% endfor %}
-            </div>
+{#{% block content %}#}
+{#    {% set detailP = craft.entries.section('detail').limit (1)%}#}
+{#    {% set detailP = craft.entries.section('detail')%}#}
+{#            <div class="detail">#}
+{#                {% for detail in detailP %}#}
+{#                    {% include 'components/DetailCard.twig' %}#}
+{#                {% endfor %}#}
+{#            </div>#}
 
 
-{% endblock %}
+{#{% endblock %}#}
