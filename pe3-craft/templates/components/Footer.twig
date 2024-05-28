@@ -1,6 +1,5 @@
-{#{% extends './_layout.twig' %}#}
-{#{% block content %}#}
-<footer class="footer">
+
+{% set entry = craft.entries.section('footer').one() %}
+
     <p>{{ entry.footer }}</p>
-</footer>
-{#{% endblock %}#}
+

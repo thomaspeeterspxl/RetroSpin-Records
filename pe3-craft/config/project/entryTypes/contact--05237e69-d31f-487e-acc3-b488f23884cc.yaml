@@ -36,6 +36,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: e240ab47-60dd-4276-a6d9-652f040e5769 # text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 960226b0-4adf-4110-a831-41f039549034
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 0cadc980-a6c8-47f1-92b8-5964fb4a57fe # NavImage
             handle: null
             includeInCards: false
@@ -58,8 +73,8 @@ icon: address-book
 name: Contact
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

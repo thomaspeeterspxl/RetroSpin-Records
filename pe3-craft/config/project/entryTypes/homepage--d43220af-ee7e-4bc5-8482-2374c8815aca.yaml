@@ -304,21 +304,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 853e5953-2a62-40f5-b169-34fb5cc7638c # Footer
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: de96c8c7-532a-432f-a3c8-25cf3e872d1a
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: c33255fe-1cc4-4833-a5dc-0030a1ab82dd
         userCondition: null

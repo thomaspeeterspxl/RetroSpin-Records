@@ -139,6 +139,17 @@ h2 {
   text-align: center;
 }
 
+.contactpage {
+  height: 100vh;
+}
+
+.formtitle {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "sono", monospace;
+}
+
 .form {
   flex: 1;
   padding: 20px;

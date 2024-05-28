@@ -1,8 +1,11 @@
 {% extends './_layout.twig' %}
+{% set entry = craft.entries.section('contact').one() %}
 
 {% block content %}
-<div class="form">
-    {{ craft.formie.renderForm('contactformulier') }}
-</div>
-
+    <section class="contactpage">
+        <h1 class="formtitle">{{ entry.text }}</h1>
+        <div class="form">
+            {{ craft.formie.renderForm('contactformulier') }}
+        </div>
+    </section>
 {% endblock %}

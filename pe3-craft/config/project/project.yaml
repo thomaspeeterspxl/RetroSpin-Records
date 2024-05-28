@@ -1,4 +1,4 @@
-dateModified: 1716901802
+dateModified: 1716903578
 elementSources:
   craft\elements\Entry:
     -
@@ -65,6 +65,7 @@ meta:
     52d7fdc8-c65c-42a5-b90d-7cd7c3a4a7ea: HeaderSlogan # HeaderSlogan
     60bf57a9-d1de-4fa6-8e6c-572ea479e692: Detailbutton # Detailbutton
     60e14386-d98e-472d-b36e-f1b36862231a: detail # detail
+    66ed92e2-e38d-43c0-bf95-30ab37aee2d8: Footer # Footer
     068c71da-c8ca-4d46-92d6-65566e35a01b: New # New
     78f9f1de-8fa1-4255-9390-c423ed7d00bf: Artist # Artist
     86a73315-fa0b-47c7-94c1-d48461fd8b84: Infotitle # Infotitle
@@ -107,6 +108,7 @@ meta:
     f660a6d7-0cee-4fc3-a616-42011d7a8110: Productblok # Productblok
     f37420bd-f257-4b9a-bd8e-9fb41372b296: intro # intro
     fa3ed81d-ed32-49b1-84a8-85f973d6631f: Bestanden # Bestanden
+    facba184-1de2-452a-ab71-ac56bb8a6f8b: Footer # Footer
     fc181f59-385b-47a7-b173-1f84efccd5e3: Producten # Producten
     fcf1ddcc-86c7-417b-9260-88f9560a7c77: drop # drop
 plugins:

@@ -9,7 +9,7 @@
 }
 
 .company-info {
-  //flex: 1;
+
   padding: 25px 20px;
   width: 50%;
 
@@ -22,13 +22,21 @@
 h2 {
   text-align: center;
 }
+.contactpage{
+  height: 100vh;
+}
+.formtitle{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family:$font-Sono;
+}
   .form {
     flex: 1;
     padding: 20px;
     display: flex;
     justify-content: center;
-    //flex-direction: column;
-    //width: 80%;
+
   }
 
   label {
