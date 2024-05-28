@@ -12,14 +12,14 @@
 {# {% endfor %}#}
 
 
- <div class="main-products">
-     <h2>{{ productitems.producttitle}}</h2>
-     {% set productImage = productitems.productimage.one()%}
-     {% if productImage %}
-         <img src="{{ productImage.url }}" class="main-products-foto">
-     {% endif %}
-     <p class="main-products-tekst">{{ productitems.productdescription }}</p>
-          <p class="main-products-prijs">Price:  {{ productitems.productprijs | money }}</p>
+{# <div class="main-products">#}
+{#     <h2>{{ productitems.producttitle}}</h2>#}
+{#     {% set productImage = productitems.productimage.one()%}#}
+{#     {% if productImage %}#}
+{#         <img src="{{ productImage.url }}" class="main-products-foto">#}
+{#     {% endif %}#}
+{#     <p class="main-products-tekst">{{ productitems.productdescription }}</p>#}
+{#          <p class="main-products-prijs">Price:  {{ productitems.productprijs | money }}</p>#}
 {#     {% for entry in craft.entries.section('productitems').all() %}#}
 {#     {% for entry in craft.entries.section('productitems').all() %}#}
 {#{% if not entry.detailbutton.isEmpty() %}#}
@@ -28,10 +28,10 @@
 {#     </a>#}
 {#{% endif %}#}
 {#     {% endfor %}#}
-     <a href="{{ productitems.url }}">
-         <button type="button" class="button-detail">Lees meer</button>
-     </a>
- </div>
+{#     <a href="{{ productitems.url }}">#}
+{#         <button type="button" class="button-detail">Lees meer</button>#}
+{#     </a>#}
+{# </div>#}
 
 
 {# Outputs: <a href="http://my-site.test/some-url" target="_blank">Some URL</a> #}

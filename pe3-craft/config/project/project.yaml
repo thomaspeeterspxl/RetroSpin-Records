@@ -1,4 +1,4 @@
-dateModified: 1716551156
+dateModified: 1716893521
 elementSources:
   craft\elements\Entry:
     -
@@ -30,6 +30,10 @@ elementSources:
 email:
   fromEmail: thomas.peeters3@student.pxl.be
   fromName: RetroSpin-Records
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   bestanden:
@@ -156,7 +160,7 @@ plugins:
       setOnlyCurrentPagePayload: false
       spamBehaviour: showSuccess
       spamBehaviourMessage: ''
-      spamEmailNotifications: false
+      spamEmailNotifications: true
       spamKeywords: ''
       spamLimit: 500
       useQueueForIntegrations: false

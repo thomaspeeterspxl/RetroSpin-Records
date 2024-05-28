@@ -1,0 +1,18 @@
+<div class="block">
+    <div class="block-content {% if block.drop == 'links' %}image-left{% else %}image-right{% endif %}">
+{#        {% if block.titelTonen %}#}
+{#            <h2 class="block-title">{{ block.titel }}</h2>#}
+{#        {% endif %}#}
+        <div class="block-body">
+            <div class="text">
+                <p>{{ block.text }}</p>
+            </div>
+            {% set Image = block.afbeelding.one() %}
+            {% if Image %}
+                <div class="image">
+                    <img src="{{ Image.url }}" alt="">
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{#<div class="block product-block">#}
+{#    <div class="products">#}
+{#        {% for product in block.productblok.all() %}#}
+{#            <div class="product-item">#}
+{#                <h3>{{ product.title }}</h3>#}
+{#                {% if product.productimage.one() %}#}
+{#                    <img src="{{ product.productimage.one().url }}" alt="{{ product.title }}">#}
+{#                {% endif %}#}
+{#                <p>{{ product.productdescription }}</p>#}
+{#                <!-- Add any other product fields you need to display -->#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#</div>#}
+
+<div class="product-block">
+        {% for productitem in block.productblok.all() %}
+            <div class="main-products">
+                <h2>{{ productitem.producttitle }}</h2>
+                {% set ProductImage = productitem.productimage.one() %}
+                {% if ProductImage %}
+                    <img src="{{ ProductImage.url }}" class="main-products-foto">
+                {% endif %}
+                <p class="main-products-tekst">{{ productitem.productdescription }}</p>
+                <p class="main-products-prijs">Price: {{ productitem.productprijs | money }}</p>
+                <a href="{{ productitem.url }}">
+                    <button type="button" class="button-detail">Lees meer</button>
+                </a>
+            </div>
+        {% endfor %}
+</div>

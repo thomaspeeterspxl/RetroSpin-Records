@@ -51,7 +51,7 @@ $font-nunito: 'Nunito', sans-serif;
 
 .blockbuilder {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -73,12 +73,12 @@ $font-nunito: 'Nunito', sans-serif;
   margin-bottom: 15px;
 }
 
-.image-left .block-body {
-  flex-direction: row;
+.block-body .image-left {
+  flex-direction: row-reverse;
 }
 
-.image-right .block-body {
-  flex-direction: row-reverse;
+.block-body .image-right {
+  flex-direction: row;
 }
 
 .block-body {
@@ -101,4 +101,14 @@ $font-nunito: 'Nunito', sans-serif;
 
 .text {
   flex: 1;
+}
+
+.product-block{
+  //width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  align-content: flex-start;
 }

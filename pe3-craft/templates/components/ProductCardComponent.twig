@@ -20,14 +20,6 @@
      {% endif %}
      <p class="main-products-tekst">{{ productitem.productdescription }}</p>
           <p class="main-products-prijs">Price:  {{ productitem.productprijs | money }}</p>
-{#     {% for entry in craft.entries.section('productitems').all() %}#}
-{#     {% for entry in craft.entries.section('productitems').all() %}#}
-{#{% if not entry.detailbutton.isEmpty() %}#}
-{#     <a href="{{ entry.detailbutton.url }}" target="{{ entry.detailbutton.target }}">#}
-{#         <button type="button" class="button-detail">{{ entry.detailbutton.text }}</button>#}
-{#     </a>#}
-{#{% endif %}#}
-{#     {% endfor %}#}
      <a href="{{ productitem.url }}">
          <button type="button" class="button-detail">Lees meer</button>
      </a>
